@@ -26,7 +26,7 @@ const App = () => {
       </View>
       <View>
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.textButton}>Kirim</Text>
+          <Text style={styles.textButton}>Sign In</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: '100%',
     height: 45,
-    borderColor: 'black',
+    borderColor: '#7c7d7e',
   },
 
   textButton: {
