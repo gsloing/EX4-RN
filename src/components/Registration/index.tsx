@@ -64,7 +64,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Email</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan Email"
+          placeholder="Masukan email anda"
           keyboardType="email-address"
           autoCapitalize="none"
           value={email}
