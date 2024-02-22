@@ -80,7 +80,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Phone Number</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan Nomor HP"
+          placeholder="Masukan Nomor telepon anda"
           keyboardType="phone-pad"
           value={phoneNumber}
           onChangeText={handlePhoneNumberChange}
