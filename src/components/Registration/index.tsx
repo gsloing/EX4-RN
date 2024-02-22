@@ -80,11 +80,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Phone Number</Text>
         <TextInput
           style={styles.input}
-<<<<<<< HEAD
           placeholder="Masukan nomor telepon anda"
-=======
-          placeholder="Masukan Nomor telepon anda"
->>>>>>> 10dd458d35ef46ed697d63a4587453a9fe23dc77
           keyboardType="phone-pad"
           value={phoneNumber}
           onChangeText={handlePhoneNumberChange}
