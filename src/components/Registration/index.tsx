@@ -46,9 +46,7 @@ const Registration = () => {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <Text style={styles.text2}>
-          Registration
-        </Text>
+        <Text style={styles.text2}>Registration</Text>
         <Text style={styles.textInput}>Nama</Text>
         <TextInput
           style={styles.input}
@@ -59,8 +57,8 @@ const Registration = () => {
         <Text style={styles.textInput}>Username</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
-          value={name}
+          placeholder="Masukan username anda"
+          value={username}
           onChangeText={handleUsernameChange}
         />
         <Text style={styles.textInput}>Email</Text>
@@ -82,7 +80,6 @@ const Registration = () => {
         <Text style={styles.textInput}>Phone Number</Text>
         <TextInput
           style={styles.input}
-
           placeholder="Masukan Nomor HP"
           keyboardType="phone-pad"
           value={phoneNumber}
@@ -90,7 +87,7 @@ const Registration = () => {
         />
 
         <TouchableOpacity style={styles.button} onPress={handleSubmit}>
-          <Text style={styles.textButton}>Kirim</Text>
+          <Text style={styles.textButton}>Register</Text>
         </TouchableOpacity>
       </ScrollView>
     </View>
@@ -105,56 +102,49 @@ const styles = StyleSheet.create({
     marginRight: 20,
     padding: 5,
   },
-  image: {
-    width: 150,
-    height: 150,
-    marginBottom: 30,
-  },
-  input: {
-    width: '100%',
-    height: 40,
-    borderWidth: 1,
-    borderColor: 'gray',
-    marginBottom: 10,
-    paddingHorizontal: 10,
+
+  text2: {
+    fontSize: 36,
+    color: 'black',
+    fontWeight: '700',
+    marginBottom: 40,
   },
 
-  scrollText: {
-    textAlign: 'left',
-    fontSize: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: 'white',
-    marginBottom: 15,
+  input: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: 'gray',
+    marginTop: 8,
+    marginBottom: 25,
+    paddingHorizontal: 10,
+    borderRadius: 10,
+    padding: 8,
   },
 
   textInput: {
-    fontSize: 15,
+    fontSize: 14,
     color: 'black',
-    fontWeight: 'bold',
-  },
-
-  text2: {
-    fontSize: 40,
-    color: 'black',
-    fontWeight: 'bold',
-    marginBottom: 5,
+    fontWeight: '500',
+    lineHeight: 16.41,
   },
 
   button: {
     color: 'red',
-    backgroundColor: 'white',
+    backgroundColor: '#C238CE',
     borderWidth: 1,
     alignItems: 'center',
+    justifyContent: 'center',
     marginTop: 20,
-    borderRadius: 5,
-    width: 60,
-    height: 25,
-    borderColor: 'black',
+    borderRadius: 30,
+    width: '100%',
+    height: 45,
+    borderColor: '#ffffff',
   },
 
   textButton: {
-    color: 'black',
-    fontSize: 15,
+    color: '#ffffff',
+    fontSize: 18,
+    fontWeight: '400',
   },
 });
 
