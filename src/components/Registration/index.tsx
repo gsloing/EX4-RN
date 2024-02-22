@@ -12,6 +12,8 @@ const Registration = () => {
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [name, setName] = useState('');
+  const [username, setUsername] = useState('');
+  const [address, setAddress] = useState('');
 
   const handleNameChange = (text: React.SetStateAction<string>) => {
     setName(text);
@@ -25,9 +27,19 @@ const Registration = () => {
     setPhoneNumber(text);
   };
 
+  const handleUsernameChange = (text: React.SetStateAction<string>) => {
+    setUsername(text);
+  };
+
+  const handleAddressChange = (text: React.SetStateAction<string>) => {
+    setAddress(text);
+  };
+
   const handleSubmit = () => {
     console.log('Nama: ', name);
+    console.log('Username: ', username);
     console.log('Email:', email);
+    console.log('Address: ', address);
     console.log('Phone Number:', phoneNumber);
   };
 
@@ -35,16 +47,23 @@ const Registration = () => {
     <View style={styles.container}>
       <ScrollView>
         <Text style={styles.text2}>
-          Silahkan mengisi Form yang ada di bawah ini
+          Registration
         </Text>
-        <Text style={styles.textInput}>Nama :</Text>
+        <Text style={styles.textInput}>Nama</Text>
         <TextInput
           style={styles.input}
           placeholder="Masukan nama anda"
           value={name}
           onChangeText={handleNameChange}
         />
-        <Text style={styles.textInput}>Email :</Text>
+        <Text style={styles.textInput}>Username</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Masukan nama anda"
+          value={name}
+          onChangeText={handleUsernameChange}
+        />
+        <Text style={styles.textInput}>Email</Text>
         <TextInput
           style={styles.input}
           placeholder="Masukan Email"
@@ -53,9 +72,17 @@ const Registration = () => {
           value={email}
           onChangeText={handleEmailChange}
         />
-        <Text style={styles.textInput}>No. Hp :</Text>
+        <Text style={styles.textInput}>Address</Text>
         <TextInput
           style={styles.input}
+          placeholder="Masukan nama anda"
+          value={address}
+          onChangeText={handleAddressChange}
+        />
+        <Text style={styles.textInput}>Phone Number</Text>
+        <TextInput
+          style={styles.input}
+
           placeholder="Masukan Nomor HP"
           keyboardType="phone-pad"
           value={phoneNumber}
@@ -73,17 +100,10 @@ const Registration = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     marginTop: 30,
     marginLeft: 20,
     marginRight: 20,
     padding: 5,
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 10,
   },
   image: {
     width: 150,
@@ -109,10 +129,14 @@ const styles = StyleSheet.create({
 
   textInput: {
     fontSize: 15,
+    color: 'black',
+    fontWeight: 'bold',
   },
 
   text2: {
-    fontSize: 16,
+    fontSize: 40,
+    color: 'black',
+    fontWeight: 'bold',
     marginBottom: 5,
   },
 
