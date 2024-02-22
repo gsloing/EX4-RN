@@ -50,7 +50,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Nama</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
+          placeholder="Masukan nama lengkap anda"
           value={name}
           onChangeText={handleNameChange}
         />
