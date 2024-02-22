@@ -57,11 +57,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Username</Text>
         <TextInput
           style={styles.input}
-<<<<<<< HEAD
           placeholder="Masukan username anda"
-=======
-          placeholder="Masukan nama anda"
->>>>>>> c86788913f077a0ee1d58b7a53ab61aadbc01589
           value={username}
           onChangeText={handleUsernameChange}
         />
@@ -77,7 +73,7 @@ const Registration = () => {
         <Text style={styles.textInput}>Address</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
+          placeholder="Masukan alamat anda"
           value={address}
           onChangeText={handleAddressChange}
         />
