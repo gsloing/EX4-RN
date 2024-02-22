@@ -50,21 +50,21 @@ const Registration = () => {
         <Text style={styles.textInput}>Nama</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
+          placeholder="Masukan nama lengkap anda"
           value={name}
           onChangeText={handleNameChange}
         />
         <Text style={styles.textInput}>Username</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
+          placeholder="Masukan username anda"
           value={username}
           onChangeText={handleUsernameChange}
         />
         <Text style={styles.textInput}>Email</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan Email"
+          placeholder="Masukan email anda"
           keyboardType="email-address"
           autoCapitalize="none"
           value={email}
@@ -73,14 +73,14 @@ const Registration = () => {
         <Text style={styles.textInput}>Address</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan nama anda"
+          placeholder="Masukan alamat anda"
           value={address}
           onChangeText={handleAddressChange}
         />
         <Text style={styles.textInput}>Phone Number</Text>
         <TextInput
           style={styles.input}
-          placeholder="Masukan Nomor HP"
+          placeholder="Masukan nomor telepon anda"
           keyboardType="phone-pad"
           value={phoneNumber}
           onChangeText={handlePhoneNumberChange}

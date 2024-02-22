@@ -1,9 +1,10 @@
 import React from 'react';
+import { View } from 'react-native';
 import Registration from './src/components/Registration';
 import UsersList from './src/components/UsersList';
 
 const App = () => {
-  return <UsersList />;
+  return <Registration />
 };
 
 export default App;
